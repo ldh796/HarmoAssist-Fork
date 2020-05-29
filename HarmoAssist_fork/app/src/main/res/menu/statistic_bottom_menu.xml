@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/statistic_info_btn"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="기본 정보">
+    </item>
+    <item
+        android:id="@+id/statistic_btn"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="분포도">
+    </item>
+    <item
+        android:id="@+id/statistic_progress_btn"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="진행도">
+
+    </item>
+</menu>

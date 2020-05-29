@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_score_section"
+        android:title="곡 추가">
+    </item>
+    <item
+        android:id="@+id/setting_section"
+        android:title="설정">
+    </item>
+    <item
+        android:id="@+id/learning_technic_button"
+        android:title="Technics">
+    </item>
+    <item
+        android:id="@+id/about_btn"
+        android:title="about">
+    </item>
+
+</menu>

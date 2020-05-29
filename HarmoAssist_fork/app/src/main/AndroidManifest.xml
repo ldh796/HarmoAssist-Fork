@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.sweetcase.harmoassist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MusicInfoFromSheetActivity"></activity>
+        <activity android:name=".CustomTechnicActivity"></activity>
+        <activity android:name=".SheetRedirectionActivity" />
+        <activity android:name=".StatisticActivity" />
+        <activity android:name=".TechnicSummaryActivity" />
+        <activity android:name=".TechnicDictionaryActivity" />
+        <activity android:name=".MusicListActivity" />
+        <activity android:name=".ComboActivity" /> <!-- Music Sheet Activity -->
+        <activity android:name="com.midisheetmusic.ChooseSongActivity" />
+        <activity
+            android:name="com.midisheetmusic.SheetMusicActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/PlayerTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

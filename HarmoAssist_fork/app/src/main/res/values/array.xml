@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tech_chord_arr">
+        <item>C</item>
+        <item>Db</item>
+        <item>D</item>
+        <item>Eb</item>
+        <item>E</item>
+        <item>F</item>
+        <item>Gb</item>
+        <item>G</item>
+        <item>Ab</item>
+        <item>A</item>
+        <item>Bb</item>
+        <item>B</item>
+    </string-array>
+
+    <string-array name="ai_option_arr">
+        <item>클래식-쇼팽</item>
+        <item>클래식-바흐</item>
+        <item>클래식-베토벤</item>
+        <item>클래식-스칼래티</item>
+        <item>발라드</item>
+        <item>뉴에이지</item>
+    </string-array>
+</resources>

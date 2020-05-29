@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sheet_music"
+    tools:context="kr.sweetcase.harmoassist.MainActivity"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:text="HarmoAssist"
+        android:fontFamily="@font/caviardreams"
+        android:textColor="@color/all_black"
+        android:textSize="40sp"
+        android:layout_weight="4"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="120dp"
+        android:background="@color/all_black">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alpha Test"
+        android:textSize="20sp"
+        android:textColor="@color/all_black"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/caviardreams_bold"
+        android:gravity="bottom|right">
+
+    </TextView>
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/EnterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_margin="20dp"
+
+        android:text="Enter"
+
+        android:textColor="@color/all_black"
+        android:textSize="22sp">
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>

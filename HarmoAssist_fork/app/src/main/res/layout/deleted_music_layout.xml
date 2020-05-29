@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/red_edge">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="항목을 삭제합니다.">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:text="정말로 삭제하시겠습니까?">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="예"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:layout_margin="10dp"
+            android:id="@+id/yes_delete_btn"
+            android:layout_weight="1"
+            android:outlineAmbientShadowColor="@color/real_gray">
+
+        </com.google.android.material.button.MaterialButton>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="아니오"
+            android:backgroundTint="@color/real_gray"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:id="@+id/no_delete_btn"
+            android:layout_weight="1"
+            android:outlineAmbientShadowColor="@color/real_gray">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

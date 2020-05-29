@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/all_black"
+        android:text="TECHNICS"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp">
+
+    </TextView>
+
+    <!-- 툴바 -->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_edge"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background= "@drawable/black_card_design"
+                android:layout_marginEnd="5dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:id="@+id/technic_search_btn"
+                android:layout_weight="6">
+            </ImageButton>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textColor="@color/all_black"
+                android:textAlignment="center"
+                android:background="@drawable/red_layout_design"
+                android:id="@+id/technic_search_edit">
+            </EditText>
+
+        </LinearLayout>
+    </Toolbar>
+
+    <!-- 리사이클 뷰 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/technic_list_view"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- 커스텀 버튼 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:layout_margin="10dp"
+        android:text="Custom Setting"
+        android:textColor="@color/white"
+        android:id="@+id/custom_chord_btn"
+        android:textSize="20sp">
+
+    </Button>
+
+    <!-- 돌아가기 버튼 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/real_gray"
+        android:layout_margin="10dp"
+        android:text="돌아가기"
+        android:textColor="@color/white"
+        android:id="@+id/back_btn_from_tech_list"
+        android:textSize="20sp">
+
+    </Button>
+
+</LinearLayout>

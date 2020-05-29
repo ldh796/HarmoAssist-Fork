@@ -1,0 +1,61 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name ="SpinnerDivideStyle" parent="android:style/Widget.ListView.DropDown">
+    <item name="android:divider">#000000</item> <!-- divider 색 -->
+    <item name="android:dividerHeight">2dp</item> <!-- divider 높이-->
+    </style>
+    <!-- 콤보박스 효과용 -->
+    <style name="SpinnerTheme" parent="AppTheme">
+       <item name="android:dropDownListViewStyle">@style/SpinnerDivideStyle</item>
+
+    </style>
+
+
+    <!-- 다이얼로그 효과용 -->
+    <style name="ListSelectAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Music Sheet -->
+    <color name="primaryDark">@color/md_teal_800</color>
+
+    <style name="Theme.AppCompat.NoActionBar.Fullscreen" parent="@style/MaterialDrawerTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="material_drawer_selected_text">@color/primary</item>
+    </style>
+
+    <style name="PlayerTheme" parent="@style/Theme.AppCompat.NoActionBar.Fullscreen">
+    </style>
+
+    <style name="ToolbarButtonStyle" parent="@android:style/Widget.Material.Button.Borderless">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <style name="DisabledToolbarButton" parent="ToolbarButtonStyle">
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+</resources>

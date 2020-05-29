@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/black_edge">
+
+    <!-- 타이틀 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:layout_weight="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/selected_music_title"
+            android:text="Test Music"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="7">
+            
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:id="@+id/selected_music_share_btn"
+                android:src="@android:drawable/ic_menu_share">
+
+            </ImageButton>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 내용물 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <!-- 템포와 빠르기 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <!-- 템포 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="템포"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/selected_music_tempo"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="20sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <!-- 빠르기 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="박자"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/selected_music_timesignature"
+                    android:textColor="@color/red"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- 화음 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="코드">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:id="@+id/selected_music_chord">
+
+            </TextView>
+
+        </LinearLayout>
+        <!-- 코멘트 보는 버튼 -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="코멘트 보기"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/selected_music_comment_btn">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selected_music_comment"
+            android:layout_margin="5dp"
+            android:visibility="gone">
+        </TextView>
+
+        <!-- 분석 버튼 -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="분석하기"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/selected_music_statistic_btn">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <!-- 열기 또는 취소 버튼 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/red"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="열기"
+                android:id="@+id/selected_music_open_btn">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/red"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="취소"
+                android:id="@+id/selected_music_close_btn">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/real_gray"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="삭제"
+                android:id="@+id/selected_music_delete_btn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

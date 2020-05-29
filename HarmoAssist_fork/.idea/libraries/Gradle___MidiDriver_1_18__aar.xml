@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :MidiDriver-1.18:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b3673166841ac10bed4fad730eff445/jetified-MidiDriver-1.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b3673166841ac10bed4fad730eff445/jetified-MidiDriver-1.18/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

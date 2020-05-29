@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicInfoFromSheetActivity"
+    android:orientation="vertical">
+
+    <!-- 제목 부분 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/all_black"
+        android:text="악보 정보"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- 항목들 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <!-- 타이틀 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="곡 제목"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:background="@drawable/red_edge"
+                android:padding="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/all_black"
+                android:textSize="15sp"
+                android:id="@+id/music_title_from_sheet"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <!-- 타이틀 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="코드"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:background="@drawable/red_edge"
+                android:padding="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/all_black"
+                android:textSize="15sp"
+                android:id="@+id/music_chord_from_sheet"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <!-- 박자 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="박자"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:background="@drawable/red_edge"
+                android:padding="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/all_black"
+                android:textSize="15sp"
+                android:id="@+id/music_timesignature_from_sheet"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <!-- 빠르기 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="빠르기"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:background="@drawable/red_edge"
+                android:padding="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/all_black"
+                android:textSize="15sp"
+                android:id="@+id/music_tempo_from_sheet"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp">
+
+            <!-- 코멘트 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="코멘트"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:background="@drawable/red_edge"
+                android:padding="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:textColor="@color/all_black"
+                android:textSize="15sp"
+                android:id="@+id/music_comment_from_sheet"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/real_gray"
+            android:text="돌아가기"
+            android:layout_marginTop="10dp"
+            android:id="@+id/back_btn_from_music_sheet">
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

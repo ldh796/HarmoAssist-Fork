@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 스크롤뷰 부분(화면이 안보일 경우 스크롤 가능 -->
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools= "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComboActivity">
+
+    <!-- 악보 선택화면 -->
+
+
+    <!-- 제목 부분 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="새 악보 생성하기"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <!-- 입력란 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+
+        <!-- 곡 제목 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="곡 제목"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:boxStrokeColor="@color/red"
+            app:hintTextColor="@color/red"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_name"
+                android:textSize="15sp"
+                android:inputType="text">
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 빠르기 부분-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="빠르기(BPM)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:boxStrokeColor="@color/red"
+            app:hintTextColor="@color/red"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_speed"
+                android:textSize="15sp"
+                android:inputType="number">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 박자 부분 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:padding="5dp"
+                android:gravity="center_vertical|left"
+                android:text="박자 :" />
+
+            <Spinner
+                android:id="@+id/spinner_beat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="박자를 선택하세요"
+                android:textColorHint="#59032149"
+                android:padding="5dp"
+                android:theme="@style/SpinnerTheme" />
+        </LinearLayout>
+
+        <!-- 코드 부분 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/red"
+                android:padding="5dp"
+                android:gravity="center_vertical|left"
+                android:text="코드 :" />
+            <!-- 코드 입력받는 부분 -->
+
+            <Spinner
+                android:id="@+id/spinner_chord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:hint="코드를 선택하세요"
+                android:textColorHint="#59032149"
+                android:theme="@style/SpinnerTheme" />
+        </LinearLayout>
+
+        <!-- 빈 악보 부분-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="빈 악보 갯수"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:boxStrokeColor="@color/red"
+            app:hintTextColor="@color/red"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/empty_measure_edit"
+                android:textSize="15sp"
+                android:inputType="number">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 최대 10줄 사용가능 , 코멘트 내에 스크롤바 설정 부분 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="코멘트"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeColor="@color/red"
+                app:hintTextColor="@color/red"
+                android:layout_marginBottom="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_comment"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:scrollbars="vertical">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 버튼 부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        >
+        <!-- AI 랜덤 버튼 부분 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/AI_RANDOM_Btn"
+            android:backgroundTint="@color/real_gray"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text ="AI Random"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ai_option_layer"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/ai_option_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeColor="@color/red"
+                app:hintTextColor="@color/red">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="작곡할 노트 갯수"
+                    android:id="@+id/note_size_text"
+                    android:inputType="number">
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- 생성버튼 부분 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/CreateBtn"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text ="생성"
+            android:layout_margin="5dp"/>
+
+        <!-- 취소 버튼 부분 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BackBtn_from_Create"
+            android:backgroundTint="@color/real_gray"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:text ="취소"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

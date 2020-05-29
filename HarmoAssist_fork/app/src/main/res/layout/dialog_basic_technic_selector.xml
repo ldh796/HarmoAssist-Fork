@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <!-- 수동 설정-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="수동 설정"
+            android:textAlignment="center">
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- 선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+    </LinearLayout>
+
+
+    <!-- 배너 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- 음높이 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="음높이"
+                android:textSize="15sp"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tech_chord_arr"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:id="@+id/select_tech_basic_pitch_spinner">
+            </Spinner>
+
+        </LinearLayout>
+
+        <!-- 화음 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="화음"
+                android:textSize="15sp"
+                android:textAlignment="center">
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tech_chord"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:id="@+id/select_tech_basic_chord_spinner">
+            </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 결정 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/real_gray"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:text="생성"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:id="@+id/basic_tech_ok_btn">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/real_gray"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="취소"
+            android:textColor="@color/red"
+            android:textAlignment="center"
+            android:id="@+id/basic_tech_cancel_btn">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</LinearLayout>

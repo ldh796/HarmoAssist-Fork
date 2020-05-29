@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#253A4B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="gray">#253A4B</color>
+    <color name="light_gray">#E8EBEC</color>
+    <color name="red">#F23B5F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="all_black">#000000</color>
+
+    <color name="real_gray">#333333</color>
+
+
+    <!-- 그래프용 -->
+    <color name="_5r">#ff0000</color>
+    <color name="_5sr">#f06060</color>
+    <color name="_10r">#fc4700</color>
+    <color name="_5yr">#fc6600</color>
+    <color name="_10yr">#fccc00</color>
+    <color name="_5y">#ffff00</color>
+    <color name="_10y">#ccff66</color>
+    <color name="_5gy">#7dcd00</color>
+    <color name="_10gy">#36b700</color>
+    <color name="_5g">#009900</color>
+    <color name="_5sg">#008656</color>
+    <color name="_10g">#008080</color>
+    <color name="_5bg">#006666</color>
+    <color name="_10bg">#009297</color>
+    <color name="_10sbg">#00e497</color>
+    <color name="_5b">#0611f2</color>
+    <color name="_10b">#003a9a</color>
+    <color name="_5pb">#00007e</color>
+    <color name="_10pb">#4d009a</color>
+    <color name="_5p">#80007f</color>
+    <color name="_10p">#770055</color>
+    <color name="_5rp">#e80074</color>
+    <color name="_5pr">#ff0066</color>
+    <color name="_5spr">#f34566</color>
+
+    <color name="IconColor">#eeee12</color>
+    <color name="material_drawer_primary">#2196F3</color>
+    <color name="material_drawer_primary_dark">#1976D2</color>
+    <color name="material_drawer_primary_light">#BBDEFB</color>
+    <color name="material_drawer_accent">#FF4081</color>
+</resources>

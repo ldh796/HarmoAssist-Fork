@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/statistic_fragment"
+        android:layout_weight="1">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_share"
+            android:id="@+id/statistic_share_btn"
+            android:layout_gravity="right|bottom"
+            android:backgroundTint="@color/white"
+            app:rippleColor="@color/red"
+            android:outlineSpotShadowColor="@color/red"
+            android:outlineAmbientShadowColor="@color/red"
+            android:layout_margin="15dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statistic_navi_bar"
+        app:itemTextColor="@color/all_black"
+        app:itemIconTint="@color/red"
+        android:background="@drawable/black_edge"
+        app:menu="@menu/statistic_bottom_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>
